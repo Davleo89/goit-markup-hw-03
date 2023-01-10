@@ -32,6 +32,11 @@ body {
  
 }
 
+.list{
+  width: 270px;
+  height: 101px;
+}
+
 .current {
   color: var(--color-blue);
   border-color: var(--color-blue);
