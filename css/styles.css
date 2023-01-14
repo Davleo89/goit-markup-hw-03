@@ -27,7 +27,12 @@ body {
   padding-bottom: 94px;
 }
 
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
 li {
   padding: 0;
@@ -56,7 +61,6 @@ li {
   list-style: none;
   color: var(--text-color);
   padding: 0;
-  margin: 0;
 }
 
 .list {
@@ -70,18 +74,20 @@ li {
 
 /* Cabecera */
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
+  border: 1px solid var(--white-color);
+  max-width: 1200px;
 }
 
-.header-left{
+.header-left {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.header-right{
+.header-right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -98,8 +104,6 @@ li {
   padding: 0;
 }
 
-
-
 .nav-info {
   display: flex;
   align-items: flex-end;
@@ -110,7 +114,7 @@ li {
   margin-right: 50px;
 }
 
-.nav-list:last-child{
+.nav-list:last-child {
   margin-right: 0;
 }
 
@@ -121,6 +125,8 @@ li {
   line-height: 1.19;
   color: var(--color-blue);
   margin-right: 96px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .link,
@@ -128,7 +134,8 @@ li {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-contact {
@@ -155,13 +162,16 @@ li {
 }
 
 .hero-tittle {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  max-width: 696px;
+  max-height: 120px;
+  box-sizing: content-box;
 }
 
 .hero-button {
@@ -175,10 +185,7 @@ li {
   font-weight: 700;
   line-height: 1.8;
   letter-spacing: 0.03em;
-  width: 240px;
-  height: 31px;
   cursor: pointer;
-  margin-top: 15px;
 }
 
 .hero-button:hover {
@@ -195,9 +202,14 @@ li {
   padding: 0;
 }
 
+.characterist .paragraph .list {
+  flex-basis: calc((100% - 60px) / 4);
+}
+
 .list-tittle {
   font-weight: 700;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 
 .list-paragraph {
@@ -212,13 +224,13 @@ li {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  padding-bottom: 55px;
+  margin-bottom: 55px;
 }
 
 .box-img {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
 }
@@ -248,6 +260,10 @@ li {
   height: 368px;
 }
 
+.name-profession {
+  padding-top: 30px;
+}
+
 .team-name {
   font-weight: 500;
   line-height: 1.18;
@@ -261,32 +277,46 @@ li {
 /* Pie de pagina */
 
 .footer {
-  background: var(--background-color);
+  background-color: var(--background-color);
   height: 252px;
 }
 
-.footer-list,
-footer .logo {
+.footer .container .logo{
+  margin-bottom: 14px;
   padding: 0;
 }
 
-.footer .link {
+.footer .container .logo:hover{
+  font-size: 27px;
+}
+
+.address{
+  width: 231px;
+  height: 100px;
+}
+
+.footer .container .link {
   color: var(--white-color);
   font-style: normal;
-  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-top: 14px;
+  padding: 0;
 }
 
-.footer .link-contact {
-  color: var(--color-paragraph);
-  font-style: normal;
-  font-weight: 400;
-}
-
-.footer .link:hover,
-.footer .link:focus,
-.footer .link-contact:hover,
-.footer .link-contact:focus {
+.footer .container .link:hover{
   color: var(--color-blue);
+}
+
+.footer .container .footer-list {
+  font-style: normal;
+  padding: 0;
+
+}
+
+.footer .container .footer-list .link-contact {
+  padding: 0;
+  margin-bottom: 5px;
 }
 
 /* PORTAFOLIO */
@@ -299,6 +329,7 @@ footer .logo {
   gap: 1rem;
   justify-content: center;
   padding: 0;
+  margin-bottom: 32px;
 }
 
 .btn {
@@ -333,10 +364,20 @@ footer .logo {
   row-gap: 1rem;
 }
 
+.list-portfolio {
+  width: 370px;
+  height: 402px;
+}
+
 .list-portfolio:hover {
   background: var(--white-color);
   border: 1px solid var(--color-button-menu);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+}
+
+.detail {
+  margin-left: 24px;
+  margin-top: 20px;
 }
