@@ -125,8 +125,8 @@ li {
   line-height: 1.19;
   color: var(--color-blue);
   margin-right: 96px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .link,
@@ -134,8 +134,8 @@ li {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .link-contact {
