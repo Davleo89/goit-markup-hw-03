@@ -53,6 +53,12 @@ li {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .link,
 .link-contact,
 .box-img,
@@ -359,9 +365,8 @@ header{
 .galery {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   padding: 0;
-  gap: 10px;
+  gap: 30px;
 }
 
 .detail .list-tittle{
@@ -369,7 +374,7 @@ header{
 }
 
 .list-portfolio {
-  flex-basis: calc((100% - 21px) / 3);
+  flex-basis: calc((100% - 90px) / 3);
 }
 
 .list-portfolio:hover {
